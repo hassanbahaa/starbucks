@@ -1,0 +1,71 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="assests/css/style.css">
+</head>
+<body>
+    <section>
+        <div class="circle">
+
+        </div>
+        <header>
+            <a href="#" ><img src="assests/img/logo.png" alt="logo" class="logo"></a>
+            <ul>
+                <li><a href="#home">home</a></li>
+                <li><a href="#menu">Menu</a></li>
+                <li><a href="#news">What's new</a></li>
+                <li><a href="#contact">contact</a></li>
+            </ul>
+        </header>
+        <div class="content">
+            <div class="textBox">
+                <h2>It's not just Coffee <br>It's <span>Starbucks</span> </h2>
+                <p>Lorem ipsum, dolor sit amet consectetur adipisicing elit. Velit ab unde numquam, quisquam ratione consequatur ipsa dignissimos impedit dolorem.</p>
+                <a href="#">Learn More</a>
+            </div>
+            <div class="imgBox">
+                <img src="assests/img/large/img1.png" alt="pic" class="starbucks">
+            </div>
+        </div>
+        <ul class="thumb">
+            <li><img src="assests/img/thumb/thumb1.png" onclick="imgSlider('assests/img/large/img1.png');changeCircle('#017143')" alt="thumb"></li>
+
+            <li><img src="assests/img/thumb/thumb2.png" onclick="imgSlider('assests/img/large/img2.png');changeCircle('#eb7495')" alt="thumb"></li>
+
+            <li><img src="assests/img/thumb/thumb3.png" onclick="imgSlider('assests/img/large/img3.png');changeCircle('#d752b1')" alt="thumb"></li>
+        </ul>
+        <ul class="sci">
+            <li><a href="#"><img src="assests/img/social-icons/facebook.png" alt="facebook"></a></li>
+            <li><a href="#"><img src="assests/img/social-icons/instagram.png" alt="instagram"></a></li>
+            <li><a href="#"><img src="assests/img/social-icons/twitter.png" alt="twitter"></a></li>
+        </ul>
+    </section>
+
+
+
+
+
+
+
+
+
+
+
+
+    <script type="text/javascript">
+        function imgSlider(anything){
+            document.querySelector('.starbucks').src = anything;
+        }
+
+        function changeCircle(color){
+            const circle = document.querySelector('.circle');
+            circle.style.background = color
+        }
+    </script>
+</body>
+</html>
+
